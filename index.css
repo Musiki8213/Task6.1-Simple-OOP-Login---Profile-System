@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Login form container */
+form#loginForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 8px #fff;
+}
+
+/* Submit button */
+button {
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2575fc;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    form#loginForm {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,76 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+#formDiv{
+    justify-items: center;
+}
+/* Form container */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #2c34a8;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 8px #fff;
+}
+
+/* Submit button */
+button {
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2575fc;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
